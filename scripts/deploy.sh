@@ -16,6 +16,7 @@ fi
 REPO=`git config remote.origin.url`
 SSH_REPO=${REPO/https:\/\/github.com\//git@github.com:}
 SHA=`git rev-parse --verify HEAD`
+echo "Repo URL: ${SSH_REPO}"
 
 # Run our build
 npm run build
@@ -23,6 +24,7 @@ npm run build
 # Set some git options
 git config --global user.name "Travis CI"
 git config --global user.email "ci@travis-ci.org"
+git remote set-url origin SSH_REPO
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
