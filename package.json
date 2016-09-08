@@ -1,0 +1,21 @@
+{
+  "name": "gh-pages-deploy-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Test",
+    "deploy": "gh-pages -d dist",
+    "build": "cp -r public dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sokra/gh-pages-deploy-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sokra/gh-pages-deploy-test/issues"
+  },
+  "homepage": "https://github.com/sokra/gh-pages-deploy-test#readme"
+}
