@@ -21,8 +21,8 @@ SHA=`git rev-parse --verify HEAD`
 npm run build
 
 # Set some git options
-git config user.name "Travis CI"
-git config user.email "ci@travis-ci.org"
+git config --global user.name "Travis CI"
+git config --global user.email "ci@travis-ci.org"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
