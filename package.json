@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sokra/gh-pages-deploy-test/issues"
   },
-  "homepage": "https://github.com/sokra/gh-pages-deploy-test#readme"
+  "homepage": "https://github.com/sokra/gh-pages-deploy-test#readme",
+  "dependencies": {
+    "gh-pages": "^0.11.0"
+  }
 }
