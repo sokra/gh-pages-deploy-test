@@ -24,7 +24,7 @@ npm run build
 # Set some git options
 git config --global user.name "Travis CI"
 git config --global user.email "ci@travis-ci.org"
-git remote set-url origin SSH_REPO
+git remote set-url origin "${SSH_REPO}"
 
 # Get the deploy key by using Travis's stored variables to decrypt deploy_key.enc
 ENCRYPTED_KEY_VAR="encrypted_${ENCRYPTION_LABEL}_key"
